@@ -73,5 +73,25 @@ AY1EAGpq9yjrPwgDbuv68uvMUhEPFZoK
 
     <footer><p>&copy; 2026 CypherFabric. Privacy is a right, not a privilege.</p></footer>
     <script data-goatcounter="https://cypherfabric.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+    <button onclick="toggleDarkMode()" id="darkToggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 2000; background: #222; color: white; border: 2px solid #3498db; padding: 12px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">🌙</button>
+
+<script>
+function toggleDarkMode() {
+    const html = document.documentElement;
+    // Cette ligne applique un filtre "négatif" sur tout le site, sauf les images
+    if (html.style.filter === 'invert(1) hue-rotate(180deg)') {
+        html.style.filter = 'invert(0)';
+        document.getElementById('darkToggle').innerHTML = '🌙';
+    } else {
+        html.style.filter = 'invert(1) hue-rotate(180deg)';
+        document.getElementById('darkToggle').innerHTML = '☀️';
+    }
+    
+    // On empêche les images et le bouton d'être inversés (sinon ils deviennent bizarres)
+    const noInvert = document.querySelectorAll('img, iframe, #darkToggle, footer');
+    noInvert.forEach(el => el.style.filter = 'invert(1) hue-rotate(180deg)');
+}
+</script>
 </body>
 </html>
