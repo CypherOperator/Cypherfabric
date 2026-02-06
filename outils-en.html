@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Tools | CypherFabric</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #3498db; --bg: #ffffff; --text: #333333; --light-gray: #f4f6f7; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: var(--text); }
+        header { background: white; border-bottom: 1px solid #eaeaea; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: 700; color: var(--primary); text-decoration: none; text-transform: uppercase; }
+        nav a { margin-left: 20px; text-decoration: none; color: #666; font-size: 0.9rem; }
+        
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 10px; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 50px; }
+
+        .category-title { border-left: 5px solid var(--accent); padding-left: 15px; margin: 40px 0 20px; color: var(--primary); }
+        
+        .tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .tool-card { border: 1px solid #eaeaea; border-radius: 8px; padding: 20px; transition: 0.3s; text-decoration: none; color: inherit; display: block; }
+        .tool-card:hover { border-color: var(--accent); box-shadow: 0 5px 15px rgba(0,0,0,0.05); transform: translateY(-3px); }
+        .tool-card h3 { margin: 0 0 10px 0; color: var(--accent); font-size: 1.1rem; }
+        .tool-card p { margin: 0; font-size: 0.9rem; color: #666; }
+
+        footer { text-align: center; padding: 40px; background: var(--primary); color: white; font-size: 0.8rem; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">CypherFabric</a>
+        <nav>
+            <a href="index.html">Homepage</a>
+            <a href="index.html" style="font-weight: bold; color: #3498db;">🇫🇷 Français</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>OSINT toolbox</h1>
+        <p class="subtitle">A rigorous selection of the best tools for your digital investigations in 2026.</p>
+
+        <h2 class="category-title">🔍 Identity and pseudonym</h2>
+        <div class="tool-grid">
+            <a href="https://whatsmyname.app/" target="_blank" class="tool-card">
+                <h3>WhatsMyName</h3>
+                <p>Instantly find a username on hundreds of social networks.</p>
+            </a>
+            <a href="https://www.sherlockid.com/" target="_blank" class="tool-card">
+                <h3>Sherlock</h3>
+                <p>Powerful tool for tracking a user's presence on the web.</p>
+            </a>
+        </div>
+
+        <h2 class="category-title">🌍 Geolocation & Images</h2>
+        <div class="tool-grid">
+            <a href="https://www.google.com/imghp" target="_blank" class="tool-card">
+                <h3>Google Lens</h3>
+                <p>Reverse image search to identify places or objects.</p>
+            </a>
+            <a href="https://www.peakvisor.com/" target="_blank" class="tool-card">
+                <h3>PeakVisor</h3>
+                <p>Analyse the mountain horizon lines to locate a photo.</p>
+            </a>
+        </div>
+
+        <h2 class="category-title">🌐 Web analyse</h2>
+        <div class="tool-grid">
+            <a href="https://urlscan.io/" target="_blank" class="tool-card">
+                <h3>URLScan.io</h3>
+                <p>Analyse what a website does in the background without opening it youself.</p>
+            </a>
+            <a href="https://archive.org/web/" target="_blank" class="tool-card">
+                <h3>Wayback Machine</h3>
+                <p>View past versions of a website, even if it has been deleted.</p>
+            </a>
+        </div>
+    </div>
+
+    <footer><p>&copy; 2026 CypherFabric. Knowledge is Power.</p></footer>
+    <script data-goatcounter="https://cypherfabric.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
