@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CypherFabric | Security & OSINT</title>
+    <style>
+        /* --- DESIGN GÉNÉRAL (STYLE ÉPURÉ) --- */
+        :root {
+            --primary: #2c3e50;    /* Bleu nuit très sombre */
+            --accent: #3498db;     /* Bleu tech pour les liens */
+            --bg: #ffffff;         /* Fond blanc pur */
+            --text: #333333;       /* Texte gris foncé pour le confort */
+            --light-gray: #f4f6f7; /* Fond des sections */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* --- NAVIGATION --- */
+        header {
+            background: white;
+            border-bottom: 1px solid #eaeaea;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #666;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* --- HERO (INTRODUCTION) --- */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: var(--light-gray);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- GRILLE DES ARTICLES --- */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary);
+            color: white;
+            font-size: 0.8rem;
+            margin-top: 50px;
+        }
+        
+        footer a { color: #aaa; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">CypherFabric</a>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="index.html" style="font-weight: bold; color: #3498db;">🇫🇷 Français</a>
+            <a href="#">About</a>
+            <a href="https://github.com/votre-pseudo" target="_blank">GitHub</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Digital Exploration</h1>
+        <p>Cybersecurity, privacy and OSINT analysis</p>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Latest Articles</h2>
+        
+        <div class="article-grid">
+            
+            <article class="card">
+                <div class="card-content">
+                    <h3>Windows Recall : Danger?</h3>
+                    <p>Why Microsoft's new feature worries security experts and how to disable it.</p>
+                    <a href="article-recall.html" class="read-more">Lire l'article →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-content">
+                    <h3>Protect your passwords.</h3>
+                    <p>Simple techniques to avoid having your accounts hacked in 2026.</p>
+                    <a href="#" class="read-more">Lire l'article →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-content">
+                    <h3>Introduction to OSINT</h3>
+                    <p>How to legally find public information on the web.</p>
+                    <a href="#" class="read-more">Lire l'article →</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CypherFabric. All rights reserved.</p>
+    </footer>
+
+<script data-goatcounter="https://cypheroperator.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
