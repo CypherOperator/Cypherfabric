@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos | CypherFabric</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #fff; border-bottom: 1px solid #eee;">
+        <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: black; font-weight: bold;">
+            <img src="logo.png" alt="Logo" style="height: 30px;">
+            <span>CypherFabric</span>
+        </a>
+        <nav>
+            <a href="index.html" style="margin-left: 20px; text-decoration: none; color: #333;">Accueil</a>
+            <a href="outils.html" style="margin-left: 20px; text-decoration: none; color: #333;">Outils</a>
+            <a href="about.html" style="margin-left: 20px; text-decoration: none; background: #eee; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">🇬🇧 EN</a>
+            <a href="contact.html" style="margin-left: 20px; text-decoration: none; color: #333;">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 1000px; margin: 60px auto; padding: 0 20px;">
+        
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Derrière la Trame</h1>
+            <p style="color: #666; font-size: 1.1rem;">Comprendre la philosophie de CypherFabric.</p>
+        </div>
+
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+            
+            <div style="flex: 1; min-width: 280px; background: #f9f9f9; padding: 30px; border-radius: 12px; border: 1px solid #eee; transition: transform 0.3s ease;">
+                <div style="font-size: 2rem; margin-bottom: 15px;">🎯</div>
+                <h3 style="color: #3498db; margin-bottom: 15px;">L'ADN de CypherFabric</h3>
+                <p style="line-height: 1.6; color: #444;">À une époque où nos données sont partout, ce projet est né de la volonté de reprendre le contrôle. CypherFabric vulgarise les outils de recherche et encourage une hygiène numérique stricte.</p>
+            </div>
+
+            <div style="flex: 1; min-width: 280px; background: #f9f9f9; padding: 30px; border-radius: 12px; border: 1px solid #eee;">
+                <div style="font-size: 2rem; margin-bottom: 15px;">🔍</div>
+                <h3 style="color: #3498db; margin-bottom: 15px;">OSINT & Sécurité</h3>
+                <p style="line-height: 1.6; color: #444;">Nous combinons la puissance de l'investigation en sources ouvertes (OSINT) avec des protocoles de protection des données pour offrir une vision complète de la sécurité moderne.</p>
+            </div>
+
+            <div style="flex: 1; min-width: 280px; background: #f9f9f9; padding: 30px; border-radius: 12px; border: 1px solid #eee;">
+                <div style="font-size: 2rem; margin-bottom: 15px;">⚖️</div>
+                <h3 style="color: #3498db; margin-bottom: 15px;">Engagement Éthique</h3>
+                <p style="line-height: 1.6; color: #444;">Toutes les méthodes partagées ici sont destinées à un usage légal, éducatif et défensif. La connaissance est une arme qui doit servir à la protection, pas à la malveillance.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <button onclick="toggleDarkMode()" id="darkToggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 2000; background: #222; color: white; border: 2px solid #3498db; padding: 12px; border-radius: 50%; cursor: pointer;">🌙</button>
+
+</body>
+</html>
